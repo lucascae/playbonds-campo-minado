@@ -1,0 +1,17 @@
+<app-card [showCard]="showCard"></app-card>
+<div class="container-box header text-center">
+  <h1 class="pt-3">{{gameTitle}}</h1>
+</div>
+<div class="board">
+  <div *ngFor="let row of board; let x = index">
+    <ng-container *ngFor="let cell of row; let y = index">
+      <app-cell [position]="[x, y]" [cellValue]="cell" [cellDisable]="!tries" (newItemEvent)="useTry($event)">{{cell}}</app-cell>
+    </ng-container>
+  </div>
+</div>
+<div class="container-box footer">
+    <app-tries-counter [tries]="tries"></app-tries-counter>
+    <app-prizes></app-prizes>
+    <app-footer (newItemEvent)="restarGame()"></app-footer>
+</div>
+

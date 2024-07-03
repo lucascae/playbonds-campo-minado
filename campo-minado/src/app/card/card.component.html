@@ -1,0 +1,14 @@
+<div class="contain d-flex" *ngIf="showCard && showCard != (0 && 5)">
+  <div class="box p-5 text-center">
+    <div class="box-info text-center">
+      <img src="{{icon}}" width="50" alt="" />
+      <h2>{{title}}</h2>
+      <p>{{message}}</p>
+    </div>
+    <div class="box-close">
+      <button class="btn btn-small btn-primary" (click)="closeModal()">
+        <span>Fechar</span>
+      </button>
+    </div>
+  </div>
+</div>

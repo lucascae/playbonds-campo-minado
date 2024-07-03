@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+.board {
+  width: 565px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 5px;
+  margin: auto;
+  padding: 10px;
+  background: #fff;
+
+  div {
+    display: contents;
+  };
+
+  button {
+    border-radius: 0;
+  }
+}
+
+.container-box {
+  width: 550px;
+  margin: auto;
+
+  h1 {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+

@@ -1,0 +1,8 @@
+<button id="{{position[0]+'_'+position[1]}}" class="cell border-0" [disabled]="cellDisable" (click)="showCell(position[0]+'_'+position[1], cellValue)">
+  <div class="front" style="background-image: url(../../assets/images/grass-tile.jpg);"></div>
+  <div *ngIf="cellValue == 0" class="back" style="background-image: url(../../assets/images/rock-tile.jpg);"></div>
+  <div *ngIf="cellValue == 1" class="back" style="background-image: url(../../assets/images/diamond-tile.jpg);"></div>
+  <div *ngIf="cellValue == 2" class="back" style="background-image: url(../../assets/images/coin-tile.jpg);"></div>
+  <div *ngIf="cellValue == 3" class="back" style="background-image: url(../../assets/images/ticket-tile.jpg);"></div>
+  <div *ngIf="cellValue == 4" class="back" style="background-image: url(../../assets/images/bomb-tile.jpg);"></div>
+</button>
